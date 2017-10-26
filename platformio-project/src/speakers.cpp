@@ -34,45 +34,48 @@ const long b[9]  	= {31, 62, 124, 247, 494, 988, 1976, 3951, 7902};
 const long r = 0;
 
 /* WE ARE NUMBER ONE */
-// long song[][2] = {
-//   {f[5],fn + hn},
-//   {c[6],hn},
-//   {b[5],qn},
-//   {c[6],qn},
-//   {b[5],qn},
-//   {c[6],qn},
-//   {b[5],hn},
-//   {c[6],hn},
-//   {gs[5],fn},
-//   {f[5],fn + hn},
-//   {f[5],hn},
-//   {gs[5],hn},
-//   {c[6],hn},
-//   {cs[6],fn},
-//   {gs[5],fn},
-//   {cs[6],fn},
-//   {eb[6],fn},
-//   {c[6],hn},
-//   {cs[6],hn},
-//   {c[6],hn},
-//   {cs[6],hn},
-//   {c[6],fn}
-//   };
-
 long song[][2] = {
-	{b[4], fn},
-	{r, qn},
-	{f[5], hn},
-	{d[5], hn},
-	{r, qn},
-	{d[5], fn},
-	{r, qn},
-	{c[5], hn},
-	{b[4], hn},
-	{r, qn},
-	{b[4], hn},
-	{e[5], hn}
+  {f[5],fn + hn},
+  {c[6],hn},
+  {b[5],qn},
+  {c[6],qn},
+  {b[5],qn},
+  {c[6],qn},
+  {b[5],hn},
+  {c[6],hn},
+  {gs[5],fn},
+  {f[5],fn + hn},
+  {f[5],hn},
+  {gs[5],hn},
+  {c[6],hn},
+  {cs[6],fn},
+  {gs[5],fn},
+  {cs[6],fn},
+  {eb[6],fn},
+  {c[6],hn},
+  {cs[6],hn},
+  {c[6],hn},
+  {cs[6],hn},
+  {c[6],fn}
 };
+
+// ALL STAR
+
+// long song[][2] = {
+// 	{b[4], fn},
+// 	{r, qn},
+// 	{f[5], hn},
+// 	{d[5], hn},
+// 	{r, qn},
+// 	{d[5], fn},
+// 	{r, qn},
+// 	{c[5], hn},
+// 	{b[4], hn},
+// 	{r, qn},
+// 	{b[4], hn},
+// 	{e[5], hn},
+//
+// };
 
 // Whether the speaker is currently playing
 bool isPlaying = 0;
@@ -140,20 +143,19 @@ void loop() {
 	// }
 	//
 
-	// if(isPlaying){
+	if(isPlaying){
 		for (int i = 0; i < (sizeof(song)/sizeof(song[0])); i++){
 			// If the song has been cancelled, break the loop
-			// if(!isPlaying){
-			// 	break;
-			// }
+			if(!isPlaying){
+				break;
+			}
 
 	  		tone(9, song[i][0]);
 	  		delay(song[i][1]);
 		}
 		noTone(9);
-		delay(2000);
-	// 	isPlaying = false;
-	// }
+		isPlaying = false;
+	}
 
 
 }
