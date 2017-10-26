@@ -12,11 +12,11 @@ const unsigned long del = 20000;
 // Define a variable for the last time the sensor triggered
 unsigned long lastTripped = 0;
 
-const long fn = 400; //Duration of 4 beats
-const long hn = 200; //Duration of 2 beats
-const long qn = 100; //Duartion of 1 beat
-const long en = 50;
-const long sn = 16;
+const long fn = 240; //Duration of 4 beats
+const long hn = 120; //Duration of 2 beats
+const long qn = 60; //Duartion of 1 beat
+const long en = 30;
+const long sn = 15;
 
 // Define the notes
 const long c[9]		= {16, 33, 65, 131, 262, 523, 1047, 2093, 4186};
@@ -74,6 +74,8 @@ long song[][2] = {
 	{e[5], hn}
 };
 
+long bpm = 104; //BPM for all star
+
 // Whether the speaker is currently playing
 bool isPlaying = 0;
 
@@ -117,7 +119,7 @@ void loop() {
 			}
 
 	  		tone(9, song[i][0]);
-	  		delay(song[i][1]);
+	  		delay(song[i][1]/bpm);
 		}
 		noTone(9);
 	 	isPlaying = false;
