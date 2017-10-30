@@ -245,8 +245,9 @@ const long r = 25000;
 
 // Darude Sandstorm
 long bpm = 140;
-long darude_start[][2] = { //Loop this twice
-	{b[3]   , qn + en},//1st bar start
+
+long song[][2] ={
+	{b[3]   , qn + en},//1st bar start	|	Darude Start * 2
 	{b[3]   , qn + en},
 	{b[3]   , en},
 	{b[3]   , qn + en},
@@ -269,21 +270,94 @@ long darude_start[][2] = { //Loop this twice
 	{b[3]   , en},
 	{b[3]   , qn + en},
 	{b[3]   , qn + en},
-	{e[4]   , en}	   //4th bar end
-};
-
-long duh_duh_duh_duh[][2] = {
+	{e[4]   , en},   //4th bar end
+	{b[3]   , qn + en},//5th bar start
+	{b[3]   , qn + en},
+	{b[3]   , en},
+	{b[3]   , qn + en},
+	{b[3]   , qn + en},
+	{e[4]   , en},	   //5th bar end
+	{e[4]   , qn + en},//6th bar start
+	{e[4]   , qn + en},
+	{d[4]   , en},
+	{d[4]   , qn + en},
+	{d[4]   , qn + en},
+	{a[3]   , en},	   //6th bar end
+	{b[3]   , qn + en},//7th bar start
+	{b[3]   , qn + en},
+	{b[3]   , en},
+	{b[3]   , qn + en},
+	{b[3]   , qn + en},
+	{e[4]   , en},	   //7th bar end
+	{b[3]   , qn + en},//8th bar start
+	{b[3]   , qn + en},
+	{b[3]   , en},
+	{b[3]   , qn + en},
+	{b[3]   , qn + en},
+	{e[4]   , en},   //8th bar end	|	Darude Start end
+	{b[2]   , sn},//duh_duh_duh_duh_da Start
 	{b[2]   , sn},
 	{b[2]   , sn},
 	{b[2]   , sn},
-	{b[2]   , sn}
-};
-
-long duh_duh_duh_duh_da[][2] = duh_duh_duh_duh + {b[2]   , en};
-
-
-long darude_up[][2] = {
+	{b[2]   , en},//duh_duh_duh_duh_da end
+	{r      , fn + en + qn},
+	{d[3]   , qn},//duh_duh_duh_duh_da Start
 	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},,//duh_duh_duh_duh_da end
+	{r      , fn + en + qn + fn},
+	{b[2]   , sn},//duh_duh_duh_duh_da Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},//duh_duh_duh_duh_da end
+	{b[2]   , sn},//duh_duh_duh_duh_da Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},//duh_duh_duh_duh_da end
+	{b[2]   , sn},//duh_duh_duh_duh_da Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},//duh_duh_duh_duh_da end
+	{b[2]   , sn},//duh_duh_duh_duh_da Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},//duh_duh_duh_duh_da end
+	{b[2]   , sn},//duh_duh_duh_duh Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},//duh_duh_duh_duh end
+	{b[2]   , sn},//duh_duh_duh_duh Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},//duh_duh_duh_duh end
+	{b[2]   , sn},//duh_duh_duh_duh Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},//duh_duh_duh_duh end
+	{b[2]   , sn},//duh_duh_duh_duh Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},//duh_duh_duh_duh end
+	{b[2]   , sn},//duh_duh_duh_duh Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},//duh_duh_duh_duh end
+	{b[2]   , sn},//duh_duh_duh_duh Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},//duh_duh_duh_duh end
+	{b[2]   , sn},//duh_duh_duh_duh Start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},//duh_duh_duh_duh end
+	{b[3]   , qn},
+	{b[2]   , sn},//Darude up
 	{b[2]   , sn},
 	{b[2]   , sn},
 	{b[2]   , sn},
@@ -296,43 +370,8 @@ long darude_up[][2] = {
 	{b[2]   , sn},
 	{b[2]   , en},
 	{e[3]   , sn},
-	{e[3]   , sn}
-};
-
-long darude_up_duh_da[][2] = {
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , en},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , en},
-	{d[3]   , en}
-};
-
-long darude_up_da_da[][2] = {
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , en},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{b[2]   , sn},
-	{d[3]   , en},
-	{d[3]   , en}
-};
-
-long darude_down[][2] = {
-	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{e[3]   , sn},//Darude Down
 	{e[3]   , sn},
 	{e[3]   , sn},
 	{e[3]   , sn},
@@ -345,24 +384,409 @@ long darude_down[][2] = {
 	{d[3]   , sn},
 	{d[3]   , en},
 	{a[2]   , sn},
-	{a[2]   , sn}
-};
-
-long duh_duh_duh_da_da[][2] = {
+	{a[2]   , sn},//Darude Down end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
 	{b[2]   , sn},
 	{b[2]   , sn},
 	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{e[3]   , sn},//Darude Down
+	{e[3]   , sn},
+	{e[3]   , sn},
+	{e[3]   , sn},
+	{e[3]   , en},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
 	{d[3]   , en},
-	{d[3]   , en}
-};
-
-long duh_duh_da[][2] = {
+	{a[2]   , sn},
+	{a[2]   , sn},//Darude Down end
+	{b[2]   , sn},//Darude up
 	{b[2]   , sn},
 	{b[2]   , sn},
-	{d[3]   , en}
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{e[3]   , sn},//Darude Down
+	{e[3]   , sn},
+	{e[3]   , sn},
+	{e[3]   , sn},
+	{e[3]   , en},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , en},
+	{a[2]   , sn},
+	{a[2]   , sn},//Darude Down end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{e[3]   , sn},//Darude Down
+	{e[3]   , sn},
+	{e[3]   , sn},
+	{e[3]   , sn},
+	{e[3]   , en},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , en},
+	{a[2]   , sn},
+	{a[2]   , sn},//Darude Down end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{b[2]   , sn},//darude_up_duh_da start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{d[3]   , en},//darude_up_duh_da End
+	{b[2]   , sn},//darude_up_da_da start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{d[3]   , en},
+	{d[3]   , en},//darude_up_da_da end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{e[3]   , sn},//Darude Down
+	{e[3]   , sn},
+	{e[3]   , sn},
+	{e[3]   , sn},
+	{e[3]   , en},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , en},
+	{a[2]   , sn},
+	{a[2]   , sn},//Darude Down end
+	{b[2]   , sn},//darude_up_duh_da start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{d[3]   , en},//darude_up_duh_da End
+	{b[2]   , sn},//darude_up_da_da start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{d[3]   , en},
+	{d[3]   , en},//darude_up_da_da end
+	{b[2]   , sn},//Darude up
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{e[3]   , sn},
+	{e[3]   , sn},//Darude up end
+	{e[3]   , sn},//Darude Down
+	{e[3]   , sn},
+	{e[3]   , sn},
+	{e[3]   , sn},
+	{e[3]   , en},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , sn},
+	{d[3]   , en},
+	{a[2]   , sn},
+	{a[2]   , sn},//Darude Down end
+	{b[2]   , sn},//darude_up_da_da start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{d[3]   , en},
+	{d[3]   , en},//darude_up_da_da end
+	{b[2]   , sn},//darude_up_da_da start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{d[3]   , en},
+	{d[3]   , en},//darude_up_da_da end
+	{b[2]   , sn},//darude_up_da_da start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{d[3]   , en},
+	{d[3]   , en},//darude_up_da_da end
+	{b[2]   , sn},//darude_up_da_da start
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , en},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{b[2]   , sn},
+	{d[3]   , en},
+	{d[3]   , en},//darude_up_da_da end
+	{b[2]   , sn},//duh_duh_duh_da_da start
+	{b[2]   , sn},
+	{b[2]   , en},
+	{d[3]   , en},
+	{d[3]   , en},//duh_duh_duh_da_da end
+	{b[2]   , sn},//duh_duh_duh_da_da start
+	{b[2]   , sn},
+	{b[2]   , en},
+	{d[3]   , en},
+	{d[3]   , en},//duh_duh_duh_da_da end
+	{b[2]   , sn},//duh_duh_duh_da_da start
+	{b[2]   , sn},
+	{b[2]   , en},
+	{d[3]   , en},
+	{d[3]   , en},//duh_duh_duh_da_da end
+	{b[2]   , sn},//duh_duh_duh_da_da start
+	{b[2]   , sn},
+	{b[2]   , en},
+	{d[3]   , en},
+	{d[3]   , en},//duh_duh_duh_da_da end
+	{b[2]   , sn},//duh_duh_da start
+	{b[2]   , sn},
+	{d[3]   , en},//duh_duh_da end
+	{b[2]   , sn},//duh_duh_da start
+	{b[2]   , sn},
+	{d[3]   , en},//duh_duh_da end
+	{b[2]   , sn},//duh_duh_da start
+	{b[2]   , sn},
+	{d[3]   , en},//duh_duh_da end
+	{b[2]   , sn},//duh_duh_da start
+	{b[2]   , sn},
+	{d[3]   , en},//duh_duh_da end
+	{b[2]   , sn},//duh_duh_da start
+	{b[2]   , sn},
+	{d[3]   , en},//duh_duh_da end
+	{b[2]   , sn},//duh_duh_da start
+	{b[2]   , sn},
+	{d[3]   , en},//duh_duh_da end
+	{b[2]   , sn},//duh_duh_da start
+	{b[2]   , sn},
+	{d[3]   , en},//duh_duh_da end
+	{b[2]   , sn},//duh_duh_da start
+	{b[2]   , sn},
+	{d[3]   , en},//duh_duh_da end
+	{e[4]   , fn}
 };
-//Fix to make it concatenate
-long song[][2] = darude_start + darude_start + duh_duh_duh_duh_da + {r , fn + en + qn} + {d[3] , qn} + duh_duh_duh_duh_da + {r , fn + en + qn + fn} + 4 * duh_duh_duh_duh_da + 7 * duh_duh_duh_duh + {b[3] , qn} + darude_up + darude_down + 3 * darude_up + darude_down + 3 * darude_up + darude_down + 3 * darude_up + darude_down + 2 * darude_up + darude_up_duh_da + darude_up_da_da + darude_up + darude_down + darude_up_duh_da + darude_up_da_da + darude_up + darude_down + 4 * darude_up_da_da + 4* duh_duh_duh_da_da + 8 * duh_duh_da + {e[4], fn};
 
 
 // Whether the speaker is currently playing
