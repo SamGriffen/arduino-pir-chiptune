@@ -83,12 +83,6 @@ long song[][2] = {
 // Whether the speaker is currently playing
 bool isPlaying = 0;
 
-// // Variable to store the current note index
-// int curNote = 0;
-//
-// // Variable to store the last time a note was played
-// unsigned long lastNote = 0;
-
 // Function to register a change in the PIR sensor (I.E. A person walks past)
 void registerChange(){
 	// Reset the timer
@@ -121,6 +115,7 @@ void loop() {
 		isPlaying = false;
 	}
 
+<<<<<<< HEAD
 	// // If the current note is in the song, and the note needs to be changed, and the song is playing, play the next note
 	// if(curNote <= ((sizeof(song)/sizeof(song[0]))) && (millis() - lastNote) >= song[curNote][1] && isPlaying){
 	// 	// Play the note
@@ -146,6 +141,8 @@ void loop() {
 	// }
 	//
 
+=======
+>>>>>>> 90e92ec692835dd6b324ff489e39cc5e2d1c956a
 	if(isPlaying){
 		for (int i = 0; i < (sizeof(song)/sizeof(song[0])); i++){
 			// If the song has been cancelled, break the loop
@@ -158,7 +155,11 @@ void loop() {
 		}
 		lastPlayed = millis();
 		noTone(9);
+<<<<<<< HEAD
 		isPlaying = false;
+=======
+	 	isPlaying = false;
+>>>>>>> 90e92ec692835dd6b324ff489e39cc5e2d1c956a
 	}
 
 
