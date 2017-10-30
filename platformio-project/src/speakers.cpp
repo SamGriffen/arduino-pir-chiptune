@@ -12,6 +12,9 @@ const unsigned long del = 20000;
 // Define a variable for the last time the sensor triggered
 unsigned long lastTripped = 0;
 
+// Variable to store the last time the song played
+unsigned long lastPlayed = 0;
+
 const long fn = 400; //Duration of 4 beats
 const long hn = 200; //Duration of 2 beats
 const long qn = 100; //Duartion of 1 beat
@@ -114,7 +117,7 @@ void setup() {
 
 void loop() {
 	//	Check the timer. If the speaker is playing, and time is up, set the playing variable to false
-	if((millis() - lastTripped) >= del){
+	if((millis() - lastTripped) >= del && isPlaying){
 		isPlaying = false;
 	}
 
@@ -153,6 +156,7 @@ void loop() {
 	  		tone(9, song[i][0]);
 	  		delay(song[i][1]);
 		}
+		lastPlayed = millis();
 		noTone(9);
 		isPlaying = false;
 	}
