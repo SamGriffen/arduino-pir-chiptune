@@ -264,9 +264,6 @@ void setup() {
   // Set the pinmode for the PIR pin
   pinMode(PIR, INPUT_PULLUP);
 
-  // Set the internal LED to output
-  pinMode(8, OUTPUT);
-
   pinMode(speaker, OUTPUT);
 
   // Attach an interrupt to the PIR pin
