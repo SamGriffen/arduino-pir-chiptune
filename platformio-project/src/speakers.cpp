@@ -156,7 +156,7 @@ long song[][2] = {
   {c[5]  , en},
   {c[5]  , en},
   {b[5]  , en},//12th bar end
-  {d[5]  , en},//13th bar start
+  {d[4]  , en},//13th bar start
   {bb[4] , en},
   {bb[4] , en},
   {f[4]  , sn},
