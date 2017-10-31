@@ -35,7 +35,7 @@ const long b[9]   = {31, 62, 124, 247, 494, 988, 1976, 3951, 7902};
 const long r = 25000;
 
 /* WE ARE NUMBER ONE */
-
+/*
 long bpm = 600;
 long song[][2] = {
   {f[5],fn + hn},
@@ -61,11 +61,11 @@ long song[][2] = {
   {cs[6],hn},
   {c[6],fn}
 };
-
+*/
 /* END WE ARE NUMBER ONE */
 
 /* ALL STAR */
-/*
+
 long bpm = 104;
 long song[][2] = {
  {r     , hn},//1st bar start
@@ -250,7 +250,7 @@ long song[][2] = {
   {g[4]  , hn},
   {r     , qn}
 };
-*/
+
 /* END ALL STAR */
 
 /* DARUDE SANDSTORM */
