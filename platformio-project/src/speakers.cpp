@@ -121,7 +121,8 @@ long song[][2] = {
   {bb[4] , qn},
   {bb[4] , qn},
   {c[5]  , en},//8th bar end
-  {c[5]  , en+hn},//9th bar start
+  {c[5]  , en},//9th bar start
+  {g[4]  , en+qn},
   {r     , qn},
   {bb[4] , en},
   {g[4]  , en},//9th bar end
