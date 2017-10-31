@@ -317,7 +317,7 @@ long song[][2] ={
 	{b[2]   , sn},
 	{b[2]   , sn},
 	{b[2]   , sn},
-	{b[2]   , en},,//duh_duh_duh_duh_da end
+	{b[2]   , en},//duh_duh_duh_duh_da end
 	{r      , fn + en + qn + fn},
 	{b[2]   , sn},//duh_duh_duh_duh_da Start
 	{b[2]   , sn},
