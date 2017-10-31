@@ -35,8 +35,8 @@ const long b[9]   = {31, 62, 124, 247, 494, 988, 1976, 3951, 7902};
 const long r = 25000;
 
 /* WE ARE NUMBER ONE */
-/*
-lng bpm = 162;
+
+long bpm = 600;
 long song[][2] = {
   {f[5],fn + hn},
   {c[6],hn},
@@ -61,7 +61,7 @@ long song[][2] = {
   {cs[6],hn},
   {c[6],fn}
 };
-*/
+
 /* END WE ARE NUMBER ONE */
 
 /* ALL STAR */
@@ -254,7 +254,7 @@ long song[][2] = {
 /* END ALL STAR */
 
 /* DARUDE SANDSTORM */
-
+/*
 long bpm = 140;
 
 long song[][2] ={
@@ -798,7 +798,7 @@ long song[][2] ={
 	{d[3]   , en},//duh_duh_da end
 	{e[4]   , fn}
 };
-
+*/
 
 // Whether the speaker is currently playing
 bool isPlaying = 0;
