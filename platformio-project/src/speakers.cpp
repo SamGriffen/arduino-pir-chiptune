@@ -365,7 +365,7 @@ long song[][2] ={
   {b[3]   , sn},
   {b[3]   , sn},
   {b[3]   , sn},//duh_duh_duh_duh end
-  {b[4]   , qn},
+  {d[4]   , qn},
   {b[3]   , sn},//Darude up
   {b[3]   , sn},
   {b[3]   , sn},
