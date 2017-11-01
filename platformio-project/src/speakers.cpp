@@ -121,7 +121,7 @@ long song[][2] = {
   {bb[4] , qn},
   {bb[4] , qn},
   {c[5]  , qn},//8th bar end//9th bar start
-  {g[4]  , qn},
+  {g[4]  , en},
   {r     , qn},
   {bb[4] , en},
   {g[4]  , en},//9th bar end
@@ -254,9 +254,9 @@ long song[][2] = {
 
 /* DARUDE SANDSTORM */
 
-long bpm = 180;
+long bpm = 140;
 long song[][2] ={
-  {b[4]   , qn + en},//2st bar start  | Darude Start * 3
+  /*{b[4]   , qn + en},//2st bar start  | Darude Start * 3
   {b[4]   , qn + en},
   {b[4]   , en},
   {b[4]   , qn + en},
@@ -365,7 +365,7 @@ long song[][2] ={
   {b[3]   , sn},
   {b[3]   , sn},
   {b[3]   , sn},//duh_duh_duh_duh end
-  {d[4]   , qn},
+  {d[4]   , qn},*/
   {b[3]   , sn},//Darude up
   {b[3]   , sn},
   {b[3]   , sn},
@@ -478,7 +478,6 @@ long song[][2] ={
   {b[3]   , en},
   {e[4]   , sn},
   {e[4]   , sn},//Darude up end
-  /*
   {b[3]   , sn},//Darude up
   {b[3]   , sn},
   {b[3]   , sn},
@@ -592,6 +591,7 @@ long song[][2] ={
   {b[3]   , en},
   {e[4]   , sn},
   {e[4]   , sn},//Darude up end
+  /*
   {b[3]   , sn},//darude_up_duh_da start
   {b[3]   , sn},
   {b[3]   , sn},
